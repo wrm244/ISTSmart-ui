@@ -45,6 +45,7 @@
             :data="titles"
             :hiddenTitle="true"
             datePosition="center"
+            textColor="text-white"
           ></newNotice>
         </div>
       </div>

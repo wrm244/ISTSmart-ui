@@ -1,5 +1,5 @@
 <template>
-  <div class="z-10 flex w-4/12 min-w-470px flex-col">
+  <div class="z-10 flex w-4/12 min-w-470px flex-col font-bold" :class="$props.textColor" >
     <div class="text-2xl font-semibold" v-if="!$props.hiddenTitle">最新通知</div>
     <div class="flex flex-col border-b-4 border-t-4 border-ist-blue-900">
       <div
@@ -10,6 +10,7 @@
         <div class="z-10 m-4 flex w-24 flex-col" :class="$props.dateBgColor, $props.datePosition === 'center' ? 'center' : ''">
           <div
             class="z-10 flex justify-end px-2 align-bottom text-4xl font-semibold text-ist-blue-500"
+            :class="$props.textColor"
           >
             {{ item.time.day }}
           </div>
@@ -48,9 +49,12 @@ const props = defineProps({
   datePosition:{
     type: String,
     default: "normal"
+  },
+  textColor:{
+    type: String,
   }
 });
-console.log(props.dateBgColor);
+console.log(props.textColor);
 </script>
 
 <style scoped>

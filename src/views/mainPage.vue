@@ -7,7 +7,7 @@
       class="absolute -right-[1290px] -top-[1150px] -z-10 h-[2000px] w-[2000px] bg-login-bg bg-contain bg-left-bottom"
     ></div>
     <Nav></Nav>
-    <div class="mt-32 flex w-full flex-1 justify-around">
+    <div class="mt-32 flex h-full w-full flex-1 justify-around">
       <div
         class="xl:leading mt-12 text-nowrap text-4xl font-semibold leading-normal text-ist-blue-800 xl:text-7xl"
       >
@@ -30,9 +30,18 @@
     <NoticeList></NoticeList>
   </div>
 
-  <div id="picture"></div>
+  <div id="picture">
+    <Banner
+      class="mt-8"
+      title="IST人工智能实验室项目图片"
+      subtitle="PICTURE"
+    ></Banner>
+    <PictureList class="mt-12"></PictureList>
+  </div>
 
-  <div id="footer"></div>
+  <div id="footer">
+    <Footer class="mt-8"></Footer>
+  </div>
 </template>
 
 <script lang="ts" setup>
@@ -43,6 +52,9 @@ import Login from "@/components/login.vue";
 import UserInfo from "@/components/userInfo.vue";
 import News from "@/components/news.vue";
 import NoticeList from "@/components/noticeList.vue";
+import Banner from "@/components/banner/banner.vue";
+import PictureList from "@/components/pitureList/pictureList.vue";
+import Footer from "@/components/footer.vue";
 
 import { useUserInfoStore } from "@/stores/userInfo";
 import { reactive } from "vue";

@@ -1,9 +1,6 @@
 <template>
-  <div class="flex w-full flex-col items-center justify-center">
-    <div class="mb-1 h-4 w-12 border-b-8 border-ist-blue-800"></div>
-    <div class="text-2xl font-thin text-ist-blue-500">NEWS</div>
-    <div class="text-4xl font-semibold text-ist-blue-900">实验室安排</div>
-  </div>
+  <Banner title="实验室安排" subtitle="NEWS"></Banner>
+
   <div class="flex flex-1 items-center justify-around">
     <div class="flex flex-col justify-center px-16">
       <div class="text-4xl font-thin tracking-widest">GUET</div>
@@ -38,6 +35,7 @@
 import { reactive } from "vue";
 import NewNotice from "@/components/newsNotice/newNotice.vue";
 import { type TypeNews } from "@/components/newsNotice/interface";
+import Banner from "@/components/banner/banner.vue"
 
 const newNoticeList = reactive<Array<TypeNews>>([
   {
