@@ -1,6 +1,6 @@
 <template>
   <div
-    class="border-ist-blue-800 relative flex h-24 items-center justify-around border-t-4"
+    class="relative flex h-24 items-center justify-around border-t-4 border-ist-blue-800"
   >
     <div class="relative flex h-24 items-center">
       <div
@@ -12,30 +12,35 @@
     </div>
     <div class="relative flex h-24 items-center">
       <div class="mx-4 flex w-32 items-center justify-center gap-2">
-        <div>实验室概况</div>
+        <div class="text-nowrap">实验室概况</div>
         <el-icon class="relative top-px"><ArrowDown /></el-icon>
       </div>
       <div class="mx-4 flex w-32 items-center justify-center gap-2">
-        <div>最新动态</div>
+        <div class="text-nowrap">最新动态</div>
         <el-icon class="relative top-px"><ArrowDown /></el-icon>
       </div>
       <div class="mx-4 flex w-32 items-center justify-center gap-2">
-        <div>活动安排</div>
+        <div class="text-nowrap">活动安排</div>
         <el-icon class="relative top-px"><ArrowDown /></el-icon>
       </div>
       <div class="mx-4 flex w-32 items-center justify-center gap-2">
-        <div>文件下载</div>
+        <div class="text-nowrap">文件下载</div>
         <el-icon class="relative top-px"><ArrowDown /></el-icon>
       </div>
       <div class="mx-4 flex w-32 items-center justify-center gap-2">
-        <div>网上报名</div>
+        <div class="text-nowrap">网上报名</div>
         <el-icon class="relative top-px"><ArrowDown /></el-icon>
       </div>
     </div>
     <div
-      class="text-ist-blue-800 mx-16 flex-nowrap text-nowrap rounded-lg bg-white font-semibold"
+      class="mx-16 flex-nowrap text-nowrap rounded-lg bg-white font-semibold text-ist-blue-800"
     >
-      <button class="px-6 py-2" @click="UserInfoStore.isLogined = !UserInfoStore.isLogined">报名登录</button>
+      <button
+        class="px-6 py-2"
+        @click="UserInfoStore.isLogined = !UserInfoStore.isLogined"
+      >
+        报名登录
+      </button>
     </div>
   </div>
 </template>
@@ -46,4 +51,7 @@ import { useUserInfoStore } from "@/stores/userInfo";
 const UserInfoStore = useUserInfoStore();
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+*{
+  overflow: hidden;
+}</style>

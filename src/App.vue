@@ -5,12 +5,13 @@
 <script setup lang="ts"></script>
 
 <style>
-html, body{
+html,
+body {
   padding: 0px;
   margin: 0px;
 }
 
-*{
-  overflow: hidden;
+* {
+  overflow-x: hidden;
 }
 </style>

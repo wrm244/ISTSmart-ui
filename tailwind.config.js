@@ -5,15 +5,17 @@ export default {
     extend: {
       /*! autoprofixer: off*/
       backgroundImage: {
-        "GUET-logo": "url('./public/logo/Guet-logo.webp')",
-        "IST-logo": "url('./public/logo/IST-logo.webp')",
-        "building-outline": "url('./public/background/building-outline.webp')",
-        "login-bg": "url('./public/background/login-bg.webp')",
-        "user-logo": "url('./public/logo/Crino.jpg')",
-        "icon-schedule": "url('./public/icon/schedule.png')",
-        "icon-course": "url('./public/icon/course.png')",
-        "icon-share": "url('./public/icon/share.png')",
-        "icon-setting": "url('./public/icon/setting.png')",
+        "GUET-logo": "url('/images/logo/Guet-logo.webp')",
+        "IST-logo": "url('/images/logo/IST-logo.webp')",
+        "user-logo": "url('/images/logo/Crino.jpg)",
+        "building-outline": "url('/images/background/building-outline.webp')",
+        "list-banner": "url('/images/background/list-banner.webp')",
+        "login-bg": "url('/images/background/login-bg.webp')",
+        "list-bg": "url('/images/background/footbg.jpg.webp')",
+        "icon-schedule": "url('/images/icon/schedule.png')",
+        "icon-course": "url('/images/icon/course.png')",
+        "icon-share": "url('/images/icon/share.png')",
+        "icon-setting": "url('/images/icon/setting.png')",
       },
       /*! autoprofixer: on*/
       colors: {
