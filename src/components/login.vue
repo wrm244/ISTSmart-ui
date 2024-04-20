@@ -1,5 +1,5 @@
 <template>
-  <div class="min-w-470px flex flex-col gap-8">
+  <div class="flex min-w-470px flex-col gap-8">
     <div class="text-2xl text-white">登陆账号</div>
     <el-input v-model="account" placeholder="请输入用户名"></el-input>
     <el-input
@@ -14,7 +14,7 @@
     <el-button type="primary">登录</el-button>
     <div class="flex justify-center">
       <div class="text-sm text-ist-blue-200">还没有账号？</div>
-      <a class="text-sm underline text-ist-blue-200" href="">去注册</a>
+      <a class="text-sm text-ist-blue-200 underline" href="">去注册</a>
     </div>
   </div>
 </template>
